@@ -20,9 +20,24 @@ Step 1 — Identify the server in which the apache service is failing.( check fo
 ```
 ssh <app-server-user>@<app-server-name>
 ```
-or go with telnet command 
+or go with telnet command ( The telnet command in Linux is a networking utility used to establish unencrypted TCP connections to a remote host.)
 
 ```
 telnet [hostname_or_IP] [port]
 
 ```
+Step 2 - Verify why the service is failing and apply the fix.
+
+On inspecting the logs, we can see that the address is already in use. Which means that some other process is using this port 5004. We need to identify which process is using the port and decide how we want the process to stop using the port. If you’ve read my article: KodeKloud Engineer Day 12: Linux Network Services., you’ll notice that this is quite similar.
+
+note: try to look over [systemd] 
+(98)Address already in use: AH00072: make_sock: could not bind to address 0.0.0.0:<port>
+no listening sockets available, shutting down
+AH00015: Unable to open logs
+
+# Check which process is already using the port.
+
+'''
+sudo netstat -tulnp | grep <port>
+
+'''
