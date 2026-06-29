@@ -74,7 +74,7 @@ Verify the listening port of httpd
 ```
 sudo ss -tulnp
 ```
-##Step-3: Validate if the apache service is running on port <port> for all the other app-servers too.
+## Step-3: Validate if the apache service is running on port <port> for all the other app-servers too.
 
 ```
 ssh <app-server-user>@<app-server-name>
