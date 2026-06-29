@@ -38,6 +38,7 @@ AH00015: Unable to open logs
 Check which process is already using the port.
 
 ```
+
 sudo netstat -tulnp | grep <port>
 
 ```
@@ -45,12 +46,14 @@ sudo netstat -tulnp | grep <port>
 or use network statistics ( is  a command line utilities used to monitor network connections)
 
 ```
+
 sudo netstat -tulnp
 
 ```
 or socket statistics  ( is also a command line utilities used to monitor network connections)
 ```
+
 sudo ss -tulnp
 
-``
+```
 
