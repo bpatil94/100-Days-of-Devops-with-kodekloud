@@ -51,3 +51,11 @@ or socket statistics  ( is also a command line utilities used to monitor network
 sudo ss -tulnp
 ```
 
+You can see that the sendmail process is using the <port> defined in the problem statement. Since we’ve already covered moving the process to another port, in this article, we shall stop the service so that the port is free for another process to use.
+
+```
+sudo systemctl stop sendmail
+sudo systemctl status sendmail
+```
+
+
