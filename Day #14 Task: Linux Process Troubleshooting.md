@@ -67,6 +67,7 @@ sudo vi /etc/httpd/conf/httpd.conf
 ```
 sudo systemctl start httpd
 ```
+```
 sudo systemctl status httpd
 ```
 Verify the listening port of httpd
