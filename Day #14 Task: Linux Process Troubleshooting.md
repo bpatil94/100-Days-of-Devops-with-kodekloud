@@ -74,5 +74,20 @@ Verify the listening port of httpd
 ```
 sudo ss -tulnp
 ```
+##Step-3: Validate if the apache service is running on port <port> for all the other app-servers too.
 
+```
+ssh <app-server-user>@<app-server-name>
+```
+```
+sudo systemctl status httpd
+```
+```
+sudo ss -tulnp
+```
+If the necessary rules are applied and implemented, you can try the curl command from the jumphost server through the defined port and check if you can access the apache service or not.
+
+```
+curl http://<app-server-name>:<port>
+```
 
