@@ -20,4 +20,9 @@ Step 1 — Identify the server in which the apache service is failing.( check fo
 ```
 ssh <app-server-user>@<app-server-name>
 ```
+or go with telnet command 
 
+```
+telnet [hostname_or_IP] [port]
+
+```
