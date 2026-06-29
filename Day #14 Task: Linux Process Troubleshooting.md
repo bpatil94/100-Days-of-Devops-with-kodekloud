@@ -15,7 +15,7 @@ Make sure the service is running.It doesn’t matter if it serves content — on
 Even if the service is running, it may be running on the wrong port. So you must ensure the configuration (Listen directive) is correct on all hosts and is using the port 8085 only.
 
 
-Step 1 — Identify the server in which the apache service is failing.( check for all 3 app servers
+## Step 1 — Identify the server in which the apache service is failing.( check for all 3 app servers
 
 ```
 ssh <app-server-user>@<app-server-name>
@@ -26,7 +26,7 @@ or go with telnet command ( The telnet command in Linux is a networking utility 
 telnet [hostname_or_IP] [port]
 
 ```
-Step 2 - Verify why the service is failing and apply the fix.
+## Step 2 - Verify why the service is failing and apply the fix.
 
 On inspecting the logs, we can see that the address is already in use. Which means that some other process is using this port 5004. We need to identify which process is using the port and decide how we want the process to stop using the port. If you’ve read my article: KodeKloud Engineer Day 12: Linux Network Services., you’ll notice that this is quite similar.
 
