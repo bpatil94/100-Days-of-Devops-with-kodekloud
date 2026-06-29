@@ -1,4 +1,5 @@
 Day #14 Task: Linux Process Troubleshooting. 
+
 The production support team of xFusionCorp Industries has deployed some of the 
 latest monitoring tools to keep an eye on every service, application, etc. running on the systems. 
 One of the monitoring systems reported about Apache service unavailability on one of the app servers in Stratos DC.
