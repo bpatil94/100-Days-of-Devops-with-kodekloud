@@ -55,7 +55,23 @@ You can see that the sendmail process is using the <port> defined in the problem
 
 ```
 sudo systemctl stop sendmail
+```
+```
 sudo systemctl status sendmail
+```
+ Now that everything is validated, you can start the apache service to run on port <port>
+Check if the service is listening on port <port>
+```
+sudo vi /etc/httpd/conf/httpd.conf
+```
+```
+sudo systemctl start httpd
+```
+sudo systemctl status httpd
+```
+Verify the listening port of httpd
+```
+sudo ss -tulnp
 ```
 
 
