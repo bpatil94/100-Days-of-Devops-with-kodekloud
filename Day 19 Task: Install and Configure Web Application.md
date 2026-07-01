@@ -65,7 +65,7 @@ sudo mv /tmp/beta /var/www/html/
 ```
 sudo mv /tmp/demo /var/www/html/
 ```
-## step5: Set proper Permissions so that it will executables 
+## step5: Set proper Permissions so that it will execute
 (change of owner and file permissions are required for the execution)
 ```
 sudo chown -R apache:apache /var/www/html/beta /var/www/html/demo
