@@ -17,5 +17,8 @@ d. Once configured correctly, you can test the website using curl http://stapp03
 
 NOTE: We have copied two files, index.php and info.php, under /var/www/html as part of the PHP-based application setup. Please do not modify these files.
 
+<img width="683" height="434" alt="image" src="https://github.com/user-attachments/assets/8293bf05-9837-40ad-b1c9-91f9d1ea13f9" />
+
+
 
 
