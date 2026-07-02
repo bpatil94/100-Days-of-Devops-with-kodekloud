@@ -138,6 +138,7 @@ You need to make a few changes to configure php-fpm
 sudo vi /etc/php-fpm.d/www.conf
 ```
 <img width="792" height="589" alt="image" src="https://github.com/user-attachments/assets/a7ff32b5-06a8-401e-8b80-31c0773f6e1d" />
+
 ```
 sudo mkdir -p /var/run/php-fpm
 ```
