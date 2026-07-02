@@ -120,7 +120,7 @@ sudo dnf install https://rpms.remirepo.net/enterprise/remi-release-9.rpm -y
 sudo dnf module list php
 ```
 ```
-sudo dnf module enable php:remi-<version-mentioned> -y
+sudo dnf module enable php:remi-8.3 -y
 ```
 ```
 sudo dnf install php-fpm php php-cli php-common php-mysqlnd php-gd php-xml php-mbstring php-pdo php-opcache -y
