@@ -138,20 +138,21 @@ You need to make a few changes to configure php-fpm
 sudo vi /etc/php-fpm.d/www.conf
 ```
 <img width="792" height="589" alt="image" src="https://github.com/user-attachments/assets/a7ff32b5-06a8-401e-8b80-31c0773f6e1d" />
-
+## step4 : create directory and change the ownership of that directory , so that nginx can access
 ```
 sudo mkdir -p /var/run/php-fpm
 ```
 ```
 sudo chown -R nginx:nginx /var/run/php-fpm
 ```
+## step5 : enable  and restart the php-fpm
 ```
 sudo systemctl enable --now php-fpm
 ```
 ```
 sudo systemctl restart php-fpm
 ```
-Validate if the socket is actually created after restarting the php-fpm service.
+## step6 : Validate if the socket is actually created after restarting the php-fpm service.
 try from both side, appserver and from jump server too
 ```
 curl http://stapp02:8092/index.php
