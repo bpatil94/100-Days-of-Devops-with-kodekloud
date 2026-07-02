@@ -124,7 +124,8 @@ sudo dnf module enable php:remi-8.3 -y
 ```
 ```
 sudo dnf install php-fpm php php-cli php-common php-mysqlnd php-gd php-xml php-mbstring php-pdo php-opcache -y
-``
+```
+```
 sudo systemctl start php-fpm
 ```
 ```
