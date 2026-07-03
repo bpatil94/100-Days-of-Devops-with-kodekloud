@@ -9,7 +9,7 @@ The Nautilus development team has provided requirements to the DevOps team for a
 ## note: 
 The core difference between a standard Git repository and a bare repository is the presence of a working directory and checked-out files.A standard repository is designed for active development, while a bare repository is meant purely for storage, sharing, and serving as a central hub.
 Standard (Non-Bare) RepositoryA standard repository contains both the internal Git database and your actual project files.
-#### Working Directory: The sandbox folder on your computer where your files live. You can directly see, open, and edit your source code here.
+#### - Working Directory: The sandbox folder on your computer where your files live. You can directly see, open, and edit your source code here.
 Checked-Out Files: The specific version or branch of files currently extracted from the Git history into your working directory.
 The .git Folder: A hidden subdirectory inside your project root containing the full version history, commits, configurations, and the staging area.
 
@@ -19,7 +19,7 @@ news/
 ├── app.py
 └── src/
 
-#### Bare Repository (--bare)A bare repository is a Git repository that does not have a working directory.
+#### - Bare Repository (--bare)A bare repository is a Git repository that does not have a working directory.
 Structure: It consists only of the administrative and history files that you would normally find hidden inside a .git folder.
 No Checked-Out Files: Because there is no working directory, you cannot see your source code files directly, edit them, or run commands like git add or git status normally.
 Purpose: It is used on central servers (like GitHub, GitLab, or your own private server) to safely receive git push operations without risk of overriding a developer's active working files.
