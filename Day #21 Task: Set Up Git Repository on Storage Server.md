@@ -93,7 +93,7 @@ ls /opt/news.git
 ```
 If it's bare, you'll see something like: 
 
-HEAD&emsp;branches&emsp;config      description    hooks     info     objects    refs  
+HEAD&emsp;branches&emsp;config&emsp;description&emsp;hooks&emsp;info&emsp;objects&emsp;refs  
 
 or you can use this too view in one coloumn also
 ```
