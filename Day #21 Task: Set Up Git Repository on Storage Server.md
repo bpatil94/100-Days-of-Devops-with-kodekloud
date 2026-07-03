@@ -92,7 +92,8 @@ you can confirm it's a bare Git repository by listing its contents:
 ls /opt/news.git 
 ```
 If it's bare, you'll see something like: 
-HEAD branches config description hooks info objects refs
+
+HEAD        branches        config      description    hooks     info     objects    refs
 
 or you can use this too view in one coloumn also
 ```
