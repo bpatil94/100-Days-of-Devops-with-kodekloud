@@ -98,8 +98,8 @@ or you can use this too view in one coloumn also
 ```
 ls /opt/news.git | xargs
 ```
-xargs → Builds and executes command lines from standard input.
--n 1 → Pass 1 argument per command execution
+-xargs → Builds and executes command lines from standard input.
+--n 1 → Pass 1 argument per command execution
 
 
 
