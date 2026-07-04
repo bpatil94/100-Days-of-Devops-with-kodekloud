@@ -6,6 +6,9 @@ The repository to be cloned is located at /opt/games.git
 
 Clone this Git repository to the /usr/src/kodekloudrepos directory. Perform this task using the natasha user, and ensure that no modifications are made to the repository or existing directories, such as changing permissions or making unauthorized alterations.
 
+- Infrastructure details:
+https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/nautilus#infrastructure-details
+
 ## Note
 - Git Fork: Copies a remote repository to your own cloud account (e.g., GitHub).
 - Git Clone: Downloads a remote repository onto your local computer.
