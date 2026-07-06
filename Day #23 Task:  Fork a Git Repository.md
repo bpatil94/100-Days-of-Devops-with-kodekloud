@@ -29,7 +29,8 @@ Click on “story-blog” repository
 <img width="1343" height="491" alt="image" src="https://github.com/user-attachments/assets/5eea3227-5a9a-41ed-bdc6-de5ace54f282" />
 
 ## step4: Fork the Repository
- 1.Find the Fork button (top-right corner of the repository page)
+
+1.Find the Fork button (top-right corner of the repository page)
 
 - Look for a button labeled “Fork”
 
