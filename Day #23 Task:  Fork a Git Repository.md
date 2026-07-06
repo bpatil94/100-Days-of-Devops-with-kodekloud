@@ -31,15 +31,17 @@ Click on “story-blog” repository
 ## step4: Fork the Repository
 1.Find the Fork button (top-right corner of the repository page)
 
--Look for a button labeled “Fork”
--May have an icon that looks like: ⑂ or a branching symbol
+- Look for a button labeled “Fork”
+
+- May have an icon that looks like: ⑂ or a branching symbol
+
 2. Click the “Fork” button
 
 3. Configure fork settings (if a dialog appears):
 
--Owner: jon (should be auto-selected)
--Repository name: story-blog (keep default)
--Click “Fork Repository” or “Create Fork”
+- Owner: jon (should be auto-selected)
+- Repository name: story-blog (keep default)
+- Click “Fork Repository” or “Create Fork”
 
 <img width="1341" height="582" alt="image" src="https://github.com/user-attachments/assets/2dd8597f-5f34-4159-ba71-c474b4aca930" />
 
