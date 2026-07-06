@@ -46,9 +46,9 @@ Click on “story-blog” repository
 
 **What you should see after forking:**
 
-URL changes from /sarah/story-blog to /jon/story-blog
-Text saying “forked from sarah/story-blog”
-You’re now viewing YOUR copy of the repository
+- URL changes from /sarah/story-blog to /jon/story-blog
+- Text saying “forked from sarah/story-blog”
+- You’re now viewing YOUR copy of the repository
 
 
 <img width="1354" height="547" alt="image" src="https://github.com/user-attachments/assets/077ae1ad-af5d-47e1-a921-9ec8de37597c" />
