@@ -70,11 +70,11 @@ git status
 ## Note
 You can do push and merge easily with the below steps.
 
-1.Commit your current changes to the **A** branch.\
-2.Push your changes to the GitHub.\
-3.Switch branch from **A** to the ** master** branch in your local computer.\
-4.Then merge the **master** branch from branch** A**.\
-5.Finally push your merge into the GitHub.
+1. Commit your current changes to the **A** branch.\
+2. Push your changes to the GitHub.\
+3. Switch branch from **A** to the  ** master**  branch in your local computer.\
+4. Then merge the **master** branch from branch ** A** .\
+5. Finally push your merge into the GitHub.
 
 ## step-5: pushing and merging the things to origin
 - push devoper branch to git hub
