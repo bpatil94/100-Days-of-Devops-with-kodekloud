@@ -22,6 +22,9 @@ sudo su
 ```
 cd /usr/src/kodekloudrepos/blog
 ```
+```
+git branch
+```
 - Mark directory as safe (only needed once)
 ```
 git config --global --add safe.directory /usr/src/kodekloudrepos/blog
@@ -49,7 +52,7 @@ cp /tmp/index.html .
 ```
 - verify the things, check the brach status do add and commit , confirm with git status
 ```
-ls -lart
+ls -larth
 ```
 ```
 git status
