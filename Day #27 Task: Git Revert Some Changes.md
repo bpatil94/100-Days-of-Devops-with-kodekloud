@@ -45,6 +45,7 @@ sudo git commit --amend -m "revert beta"
 ```
 <img width="673" height="131" alt="image" src="https://github.com/user-attachments/assets/5f21caea-be17-489f-a802-b4b22e0c56eb" />
 
+## Step 5 — validate
 ```
 sudo git log
 ```
