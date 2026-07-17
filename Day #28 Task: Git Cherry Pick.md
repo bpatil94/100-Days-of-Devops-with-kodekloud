@@ -9,6 +9,12 @@ There are two branches in this repository, master and feature. One of the develo
 
 - Infrastucture details: https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/nautilus#infrastructure-details
 
+## Note:
+- <img width="623" height="355" alt="image" src="https://github.com/user-attachments/assets/29c1a755-5706-439d-a169-64546dab2c14" />
+- <img width="657" height="412" alt="image" src="https://github.com/user-attachments/assets/fe021ab1-96a3-41f8-9a21-653805b0b0cc" />
+
+
+
 ## Step 1 — Connect to Storage Server
 ```
 ssh natasha@ststor01
