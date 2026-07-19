@@ -72,5 +72,34 @@ Note: For these kind of scenarios requiring changes to be done in a web UI, plea
 - infrastructure details: https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/nautilus#infrastructure-details
 - Gitea UI: https://3000-port-ci3nhrvjmn2qbwgp.labs.kodekloud.com/
 
+### note: A pull request (PR) is a proposal to merge code changes from one branch into another on GitHub. It is the foundational collaboration tool that allows developers to review, discuss, and test code before it becomes part of the main project.
 
+
+
+
+## Step 1 — Connect to Storage Server
+```
+ssh max@ststor01
+```
+## Step 2 — Check the cloned repository
+```
+ls
+cd story-blog/
+```
+
+## Step 3 — Commit history
+```
+git log
+```
+## Step 4 — Access the Gitea web UI
+use the given user and pass
+
+## Step 5 — Create the Pull Request (PR) and add a reviewer
+creating pull request and adding reviewr
+
+## Step 6 — Logout and login as Tom
+
+## Step 7 — Review and merge the PR
+
+## Step 8 — Final Check
 
