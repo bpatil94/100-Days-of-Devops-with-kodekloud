@@ -93,13 +93,35 @@ git log
 ```
 ## Step 4 — Access the Gitea web UI
 use the given user and pass
+<img width="1332" height="588" alt="image" src="https://github.com/user-attachments/assets/925c4e3f-7e3b-456c-988f-2fba183d3648" />
 
-## Step 5 — Create the Pull Request (PR) and add a reviewer
-creating pull request and adding reviewr
+<img width="1358" height="460" alt="image" src="https://github.com/user-attachments/assets/cc554d04-09f4-47b1-a949-e4c872820f28" /> 
+
+<img width="1361" height="458" alt="image" src="https://github.com/user-attachments/assets/20754bb2-84a0-4bdf-bdc1-fae0f9064211" />
+
+<img width="1347" height="613" alt="image" src="https://github.com/user-attachments/assets/1ff951e2-2097-4621-aac4-f4a08a69d856" /> 
 
 ## Step 6 — Logout and login as Tom
-
-## Step 7 — Review and merge the PR
+  <img width="1354" height="425" alt="image" src="https://github.com/user-attachments/assets/7c9528ed-b442-4d39-906a-214d1df840bc" />
+- approve the PR request ( see the notification and approve)
+   <img width="1260" height="575" alt="image" src="https://github.com/user-attachments/assets/97138889-50f0-489f-a4fd-8389813f360a" />
 
 ## Step 8 — Final Check
+-   again log in as max and see the notification and merge status
+  <img width="1344" height="503" alt="image" src="https://github.com/user-attachments/assets/c349d675-5a6d-40a5-84ef-36f5e3c50306" /> 
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
 
