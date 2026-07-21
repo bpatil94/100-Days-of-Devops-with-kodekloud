@@ -66,6 +66,7 @@ git push origin master --force
 ```
 - Because history changed, a force push is required:
 <img width="539" height="145" alt="image" src="https://github.com/user-attachments/assets/da2287a3-acb3-4a0c-b2fa-166c4a537a54" />
+
 ## step 6 - Validation
 ```
 git status
