@@ -10,10 +10,6 @@ The Nautilus application development team was working on a git repository /usr/s
 2. Also make sure to push your changes.
 
 
-
-
-
-
 - infrastructure details: https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/nautilus#infrastructure-details
 - Note
    1. The git reset command is used to undo changes by moving your current branch (HEAD) to a specific previous commit. It alters your commit history, staging area, and local working directory depending on the flag you use
@@ -40,7 +36,10 @@ ssh natasha@ststor01
 ```
 <img width="585" height="185" alt="image" src="https://github.com/user-attachments/assets/2bed593a-8476-4a94-be49-74ce35a9aec6" />
 
-## Step 2 — Go to the repository mentioned in task statement and secure that path
+## Step 2 — switch user to root, Go to the repository mentioned in task statement and secure that path
+```
+sudo su
+```
 ```
 cd /usr/src/kodekloudrepos/blog
 ```
@@ -66,10 +65,13 @@ git reset --hard 89aab14
 git push origin master --force
 ```
 - Because history changed, a force push is required:
+<img width="539" height="145" alt="image" src="https://github.com/user-attachments/assets/da2287a3-acb3-4a0c-b2fa-166c4a537a54" />
+## step 6 - Validation
 ```
 git status
 ```
-<img width="680" height="144" alt="image" src="https://github.com/user-attachments/assets/949004c3-c2c1-4f67-be5d-4fe3ef9b9fe1" />
+<img width="581" height="118" alt="image" src="https://github.com/user-attachments/assets/26948c13-9f25-4d39-b50c-bd2a30fdd59c" />
+
 
            
 
