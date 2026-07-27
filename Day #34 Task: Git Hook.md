@@ -62,7 +62,7 @@ done
 
 ## Step-4: Merge the feature branch to your local master and validate whether the release is tagged.
 
-```
+
 
 <img width="594" height="244" alt="image" src="https://github.com/user-attachments/assets/016b1809-184d-477f-a94c-b39d020cd241" />
 
