@@ -90,9 +90,9 @@ done
      - This lets us name the release tag dynamically based on the current date.
 6.  Define the tag name.
   " TAG_NAME="release-$TODAY" "
-   - Concatenates release- with today’s date.
-   - Example: release-2026-07-27
-   - This will be the name of the Git tag.
+    - Concatenates release- with today’s date.
+    - Example: release-2026-07-27
+    - This will be the name of the Git tag.
 7.  Get the latest commit on master.
   "COMMIT=$(git rev-parse refs/heads/master)"
     - git rev-parse <ref> returns the commit hash that a ref points to.
