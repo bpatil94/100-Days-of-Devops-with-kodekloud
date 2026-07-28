@@ -94,17 +94,17 @@ sudo docker --version
 
 - For docker-compose
 
-# 1. Install EPEL and Python3/pip3
+## 1. Install EPEL and Python3/pip3
 sudo yum install -y epel-release
 sudo yum install -y python3 python3-pip
-# 2. Remove the broken PyInstaller binary to avoid confusion
+## 2. Remove the broken PyInstaller binary to avoid confusion
 sudo rm -f /usr/local/bin/docker-compose /usr/bin/docker-compose
-# 3. Install docker-compose via pip3 system-wide
+## 3. Install docker-compose via pip3 system-wide
 sudo pip3 install --upgrade docker-compose
-# pip3 typically installs the script to /usr/local/bin/docker-compose
-# ensure it's executable and available from /usr/bin (some images don't have /usr/local/bin in PATH)
+pip3 typically installs the script to /usr/local/bin/docker-compose
+## ensure it's executable and available from /usr/bin (some images don't have /usr/local/bin in PATH)
 sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
-# 4. Verify
+## 4. Verify
 which docker-compose || echo "docker-compose not in PATH, but test full path"
 /usr/bin/docker-compose --version
 
