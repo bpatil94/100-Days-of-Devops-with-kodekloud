@@ -92,7 +92,10 @@ sudo docker --version
 
 <img width="427" height="46" alt="image" src="https://github.com/user-attachments/assets/95e82bff-0a7a-41a2-be14-2040015d6eab" />
 
-- For docker-compose
+
+
+
+# For docker-compose instalation
 
 ## 1. Install EPEL and Python3/pip3
 sudo yum install -y epel-release
