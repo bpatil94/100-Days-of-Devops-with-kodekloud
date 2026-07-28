@@ -25,10 +25,14 @@ ssh natasha@ststor01
 <img width="789" height="139" alt="image" src="https://github.com/user-attachments/assets/2f80a1b3-5ebf-4321-8ec1-8df33e82eda7" />
 
 ## Step-2: create a file in the hooks folder in the central repository.
+" Hooks should be under bare repository instead of local repo "
+- A working repository is the developer's local clone.
+- A bare repository is typically the central remote repository (for example, /opt/project.git) that receives git push requests from developers.
+- Bare RepositoryA bare repository contains only the Git administrative data and version history, completely omitting a working tree. It is typically used as a central server repository (like on GitHub or a self-hosted server).
+  
 ```
 cd /opt/cluster.git/hooks
 ```
-- Bare RepositoryA bare repository contains only the Git administrative data and version history, completely omitting a working tree. It is typically used as a central server repository (like on GitHub or a self-hosted server).
 <img width="547" height="287" alt="image" src="https://github.com/user-attachments/assets/902bc174-1f70-467b-bd84-a850a05f79bd" />
 
 ## step3 : You need to create the post-update hook/script in this path.
