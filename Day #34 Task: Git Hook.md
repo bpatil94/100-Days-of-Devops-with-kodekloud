@@ -36,6 +36,7 @@ cd /opt/cluster.git/hooks
 <img width="547" height="287" alt="image" src="https://github.com/user-attachments/assets/902bc174-1f70-467b-bd84-a850a05f79bd" />
 
 ## step3 : You need to create the post-update hook/script in this path.
+- /opt/cluster.git/hooks/
 ```
 vi post-update
 ```
@@ -62,13 +63,73 @@ do
     fi
 done
 ```
+- give them the executable permissions to those files
+
 <img width="625" height="115" alt="image" src="https://github.com/user-attachments/assets/192fd977-e51b-4c70-a355-6fe7521bfcdd" />
 
+## Note
+1. Shebang.
+   "#!/bin/bash"
+   - This tells the system to run this script with Bash.
+   - Every hook needs a shebang so the shell knows how to execute it.
+3. Loop through updated refs.
+   "for ref in "$@"
+    do"
+   - "$@" contains all branch references that were updated by the push.
+   - The loop lets us check each updated branch individually.
+   - ref is just a variable representing the current branch in the loop.
+4. Only care about master.
+   "if [ "$ref" = "refs/heads/master" ]; then"
+   - We only want to create a release tag when master is updated.
+   - refs/heads/master is the full Git reference name for the master branch.
+   - Any other branch (a.k.a: feature.) is ignored.
+5.  Get today’s date.
+   "TODAY=$(date +%F)"
+   - date +%F outputs today’s date in YYYY-MM-DD format.
+   - Example: 2026-07-27
+   - This lets us name the release tag dynamically based on the current date.
+5.  Define the tag name.
+  " TAG_NAME="release-$TODAY" "
+   - Concatenates release- with today’s date.
+   - Example: release-2026-07-27
+   - This will be the name of the Git tag.
+6.  Get the latest commit on master.
+  "COMMIT=$(git rev-parse refs/heads/master)"
+   - git rev-parse <ref> returns the commit hash that a ref points to.
+   - Here, it gets the latest commit on master in the bare repo.
+   - This ensures the tag points to the correct commit.
+7.  Create the tag.
+  "git tag "$TAG_NAME" "$COMMIT" 2>/dev/null"
+  - Creates a lightweight tag named release-YYYY-MM-DD pointing to the latest master commit.
+  - 2>/dev/null ignores errors, e.g., if the tag already exists (so the push doesn’t fail).
+8.  End of loop
+    "fi
+     done"
+    - Closes the if and for blocks.
+    - Before we move on to the next step, you also need to make the script in the executable mode.
+
 ## Step-4: Merge the feature branch to your local master and validate whether the release is tagged.
-
-
-
+- navigate to working directory
+```
+  cd /usr/src/kodekloudrepos/cluster/
+```
+- check the branch and checkout to master
+```
+git branch
+```
+```
+gir checkout master
+```
+- merge the feature branch with master and push to origin
+```
+git merge feature
+```
+```
+git push origin master
+```
 <img width="594" height="244" alt="image" src="https://github.com/user-attachments/assets/016b1809-184d-477f-a94c-b39d020cd241" />
+
+- see the status of tags
 
 <img width="542" height="284" alt="image" src="https://github.com/user-attachments/assets/bcb23839-2d50-4481-b1a4-6c27da71733f" />
 
