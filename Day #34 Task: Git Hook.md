@@ -80,28 +80,28 @@ done
    - ref is just a variable representing the current branch in the loop.
 4. Only care about master.
    "if [ "$ref" = "refs/heads/master" ]; then"
-   - We only want to create a release tag when master is updated.
-   - refs/heads/master is the full Git reference name for the master branch.
-   - Any other branch (a.k.a: feature.) is ignored.
+    - We only want to create a release tag when master is updated.
+    - refs/heads/master is the full Git reference name for the master branch.
+    - Any other branch (a.k.a: feature.) is ignored.
 5.  Get today’s date.
    "TODAY=$(date +%F)"
-   - date +%F outputs today’s date in YYYY-MM-DD format.
-   - Example: 2026-07-27
-   - This lets us name the release tag dynamically based on the current date.
-5.  Define the tag name.
+    - date +%F outputs today’s date in YYYY-MM-DD format.
+    - Example: 2026-07-27
+    - This lets us name the release tag dynamically based on the current date.
+6.  Define the tag name.
   " TAG_NAME="release-$TODAY" "
    - Concatenates release- with today’s date.
    - Example: release-2026-07-27
    - This will be the name of the Git tag.
 6.  Get the latest commit on master.
   "COMMIT=$(git rev-parse refs/heads/master)"
-   - git rev-parse <ref> returns the commit hash that a ref points to.
-   - Here, it gets the latest commit on master in the bare repo.
-   - This ensures the tag points to the correct commit.
+    - git rev-parse <ref> returns the commit hash that a ref points to.
+    - Here, it gets the latest commit on master in the bare repo.
+    - This ensures the tag points to the correct commit.
 7.  Create the tag.
   "git tag "$TAG_NAME" "$COMMIT" 2>/dev/null"
-  - Creates a lightweight tag named release-YYYY-MM-DD pointing to the latest master commit.
-  - 2>/dev/null ignores errors, e.g., if the tag already exists (so the push doesn’t fail).
+    - Creates a lightweight tag named release-YYYY-MM-DD pointing to the latest master commit.
+    - 2>/dev/null ignores errors, e.g., if the tag already exists (so the push doesn’t fail).
 8.  End of loop
     "fi
      done"
