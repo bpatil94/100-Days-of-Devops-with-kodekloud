@@ -1,9 +1,9 @@
 # Day #36 task: Deploy Nginx Container on Application Server
 
-The Nautilus DevOps team is conducting application deployment tests on selected application servers. They require a nginx container deployment on Application Server 1. Complete the task with the following instructions:
+The Nautilus DevOps team is conducting application deployment tests on selected application servers. They require a nginx container deployment on Application Server 2. Complete the task with the following instructions:
 
 
-On Application Server 1 create a container named nginx_1 using the nginx image with the alpine tag. Ensure container is in a running state.
+On Application Server 2 create a container named nginx_2 using the nginx image with the alpine tag. Ensure container is in a running state.
 
 
 
@@ -11,7 +11,7 @@ On Application Server 1 create a container named nginx_1 using the nginx image w
 
 1️⃣ Connected to the target server
 ```
-ssh tony@stapp01
+ssh steve@stapp02
 ```
 <img width="684" height="137" alt="image" src="https://github.com/user-attachments/assets/9e0fa119-10d7-4601-bc6a-3cdc30357f41" /> 
 
@@ -24,7 +24,7 @@ docker pull nginx:alpine
 
 3️⃣ Created and started the container
 ```
-docker run -d - name nginx_2 nginx:alpine
+docker run -d --name nginx_2 nginx:alpine
 ```
 <img width="836" height="44" alt="image" src="https://github.com/user-attachments/assets/a6231e6a-bda1-4881-979c-58cd44f6aa1a" />
  
