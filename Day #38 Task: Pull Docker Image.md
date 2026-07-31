@@ -25,6 +25,7 @@ ssh tony@stapp01
 
 ## 3. Re-tag the image
 - Create a new tag named blog using the docker tag command:
+  
 ```
 docker tag busybox:musl busybox:news
 ```
