@@ -32,12 +32,14 @@ docker tag busybox:musl busybox:news
 <img width="726" height="21" alt="image" src="https://github.com/user-attachments/assets/9802586b-5daa-4274-af15-d7839bbfa67c" />
 
 - This doesn’t duplicate the image; it simply creates a new label that references the same image ID.
-- 
+  
 ## 4. Verify the tag
 - List all images to confirm both tags now exist:
+  
 ```
 docker images
 ```
 <img width="851" height="119" alt="image" src="https://github.com/user-attachments/assets/a6300f6b-4c89-46dd-b286-0a5a3fc494dc" />
+
 
 - Notice that both musl and blog share the same IMAGE ID, which confirms that the retagging worked correctly.
