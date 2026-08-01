@@ -69,13 +69,13 @@ We need rules for 5 things:
 - Whatever is already enabled, we need to preserve all such communications.
 - And lastly, we need to enable DROP by default, so that no other incoming requests other than the above mentioned are accepted.
 
-- !/bin/bash
-- Safe iptables setup for CentOS Stream (remote-friendly)
-- OS: CentOS Stream
-- App server IP: <app-server-01>,<app-server-02>,<app-server-03>
-- LBR IP: <LBR-ip>
-- Apache listening on port <port-defined in question>
-- Default INPUT policy: DROP
+-- !/bin/bash
+-- Safe iptables setup for CentOS Stream (remote-friendly)
+-- OS: CentOS Stream
+-- App server IP: <app-server-01>,<app-server-02>,<app-server-03>
+-- LBR IP: <LBR-ip>
+-- Apache listening on port <port-defined in question>
+-- Default INPUT policy: DROP
 
 ## --- Step 1: Determine your current SSH client IP ---
 MY_IP=$(echo $SSH_CLIENT | awk '{print $1}')
