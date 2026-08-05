@@ -64,10 +64,14 @@ cat /opt/docker/Dockerfile
 ```
 <img width="953" height="213" alt="image" src="https://github.com/user-attachments/assets/5d94be6c-d7c0-4ea9-b69d-1edcd36d3570" />
 
-- Optional: Build and Test the Image. To ensure the Dockerfile works as expected, you can build and test the image (though not explicitly requested, this verifies the setup).
+- **Optional:** Build and Test the Image. To ensure the Dockerfile works as expected, you can build and test the image (though not explicitly requested, this verifies the setup).
   Build the image:
+
+  1. Build the image:
   ```
-  1. cd /opt/docker
+  cd /opt/docker
+  ```
+  ```
   docker build -t custom-apache:8083 .
   ```  
   <img width="1011" height="360" alt="image" src="https://github.com/user-attachments/assets/151851db-3886-4620-8d31-cc6a2544ab9b" />
