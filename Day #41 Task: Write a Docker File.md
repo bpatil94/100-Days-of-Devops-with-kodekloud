@@ -67,16 +67,18 @@ cat /opt/docker/Dockerfile
   ```
   1. cd /opt/docker
   docker build -t custom-apache:8083 .
-  ```
+  ```  
   <img width="1011" height="360" alt="image" src="https://github.com/user-attachments/assets/151851db-3886-4620-8d31-cc6a2544ab9b" />
+
 
   2. Run a container:
   ```
   docker run -d -p 3000:3000 custom-apache:8083
-  
+  ```
   <img width="1232" height="119" alt="image" src="https://github.com/user-attachments/assets/8845baad-0a71-4add-bc51-e0108703ad75" />
 
   3. Test Apache:
+  
   ```
   curl http://localhost:8083
   ```
