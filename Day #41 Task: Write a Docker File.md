@@ -48,13 +48,13 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 **Note :** 
     Explanation of the Dockerfile
 
-    - Base Image: FROM ubuntu:24.04 specifies Ubuntu 24.04 as the base image.
-    - Install Apache2: RUN apt-get update && apt-get install -y apache2 updates the package index and installs apache2 non-interactively.
+    - Base Image: FROM ubuntu:24.04   -----> specifies Ubuntu 24.04 as the base image.
+    - Install Apache2: RUN apt-get update && apt-get install -y apache2 ------> updates the package index and installs apache2 non-interactively.
     - Configure Port 3000:
-    - sed -i ‘s/Listen 80/Listen 3000/’ /etc/apache2/ports.conf changes the default listening port from 80 to 8083 in the Apache configuration.
-    - sed -i ‘s/<VirtualHost \*:80>/<VirtualHost \*:3000>/’ /etc/apache2/sites-available/000-default.conf updates the virtual host to use port 3000, ensuring Apache listens on all interfaces (*) for port 3000.
-    - Expose Port: EXPOSE 8083 documents that the container listens on port 8083.
-    - Start Apache: CMD [“/usr/sbin/apache2ctl”, “-D”, “FOREGROUND”] runs Apache in the foreground to keep the container running.
+    - sed -i ‘s/Listen 80/Listen 3000/’ /etc/apache2/ports.conf -------> changes the default listening port from 80 to 8083 in the Apache configuration.
+    - sed -i ‘s/<VirtualHost \*:80>/<VirtualHost \*:3000>/’ /etc/apache2/sites-available/000-default.conf  -----> updates the virtual host to use port 3000, ensuring Apache listens on all interfaces (*) for port 3000.
+    - Expose Port: EXPOSE 8083    -----> documents that the container listens on port 8083.
+    - Start Apache: CMD [“/usr/sbin/apache2ctl”, “-D”, “FOREGROUND”] ------> runs Apache in the foreground to keep the container running.
 
 ## step 4: Verify the Dockerfile:
 ```
@@ -82,6 +82,9 @@ cat /opt/docker/Dockerfile
   ```
   
   This should return the default Apache page, confirming Apache is running on port 8083.
+
+  <img width="1144" height="297" alt="image" src="https://github.com/user-attachments/assets/e2b26899-7172-49f3-aef6-62656bdea155" />
+
   
-  <img width="1144" height="297" alt="image" src="https://github.com/user-attachments/assets/c3d749ed-bb9b-49fb-8147-39522edee830" />
+  
 
