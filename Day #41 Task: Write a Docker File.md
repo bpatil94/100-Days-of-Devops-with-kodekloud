@@ -33,6 +33,8 @@ vi Dockerfile
 ```
 <img width="495" height="20" alt="image" src="https://github.com/user-attachments/assets/5e14d096-b6ab-48d4-b7b4-d52e7b681513" />
 
+- copy and paste the below things
+  
 ```
 FROM ubuntu:24.04
 # Install apache2
