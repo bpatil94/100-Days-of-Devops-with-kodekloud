@@ -13,6 +13,17 @@ c. Set it to use subnet 192.168.30.0/24 and iprange 192.168.30.0/24.
 
 - Infrastructure details: https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/nautilus#infrastructure-details
 
+**Note**
+Docker networking allows containers to securely communicate with each other, the host machine, and external networks like the internet. By isolating containers into distinct virtual network namespaces, Docker ensures network security without the heavy resource overhead of full virtual machines.
+ Core Network DriversDocker utilizes distinct drivers to fulfill different architectural and scalability requirements:
+ 1. bridge: The default network driver. It sets up a private software network switch within a single host. Containers on the same bridge communicate natively via internal IP addresses or automatically resolved container names (in user-defined custom bridges).
+ 2. host: Removes the network isolation barrier between the container and the host machine. The container shares the host’s network namespace directly, allowing maximum performance at the expense of port conflicts.
+ 3. overlay: Enables multi-host communication. It creates a distributed mesh network across separate physical or virtual Docker daemons, making it the bedrock for orchestrators like Docker Swarm.
+ 4. macvlan: Allocates a unique MAC address directly to a container’s virtual interface. This assigns the container an individual IP address directly on your physical local network, tricking routers into seeing it as a distinct physical machine.
+ 5. none: Fully isolates a container by disabling all network stacks. The container receives only a loopback (127.0.0.1) interface
+
+    <img width="593" height="339" alt="image" src="https://github.com/user-attachments/assets/80c0d47b-8173-4c8a-99a4-fa10d4bd96b2" />
+
 
 ## step 1: ssh into the app server
 ```
