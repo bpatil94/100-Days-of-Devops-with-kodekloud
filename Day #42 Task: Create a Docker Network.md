@@ -13,7 +13,7 @@ c. Set it to use subnet 192.168.30.0/24 and iprange 192.168.30.0/24.
 
 - Infrastructure details: https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/nautilus#infrastructure-details
 
-**Note**
+**Note : **
 Docker networking allows containers to securely communicate with each other, the host machine, and external networks like the internet. By isolating containers into distinct virtual network namespaces, Docker ensures network security without the heavy resource overhead of full virtual machines.
  Core Network DriversDocker utilizes distinct drivers to fulfill different architectural and scalability requirements:
  1. bridge: The default network driver. It sets up a private software network switch within a single host. Containers on the same bridge communicate natively via internal IP addresses or automatically resolved container names (in user-defined custom bridges).
