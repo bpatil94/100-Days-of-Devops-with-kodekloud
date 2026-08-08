@@ -80,3 +80,69 @@ curl http://localhost:8085
 ### check wheather the volume is properly mounted or not ( see the files in docker host "/opt/security/" path those things should reflect in the containers mentioned path "/usr/local/apache2/htdocs")
 
 <img width="570" height="269" alt="image" src="https://github.com/user-attachments/assets/cb73ad6b-e39e-4f00-b5ef-b37c5301afd0" />
+
+======================================================================================= ===================================================== ==================================================
+
+
+# Common Docker Compose Commands
+```
+# Start containers
+docker-compose up -d
+
+# Stop containers
+docker-compose down
+
+# View logs
+docker-compose logs
+
+# Restart containers
+docker-compose restart
+
+# Check status
+docker-compose ps
+
+```
+
+# Troubleshooting
+
+If you encounter any issues:
+
+1.Permissions Issues:
+```
+# Check permissions on /opt/data
+ls -la /opt/data
+
+# Fix permissions if needed
+sudo chmod -R 755 /opt/data
+```
+2. Port Already in Use:
+```
+# Check if port is already in use
+sudo ss -tuln | grep 8085
+
+# Find and stop the process using the port
+sudo fuser -k 8085/tcp
+```
+
+3. Docker Compose Version Issues:
+```
+# Check Docker Compose version
+docker-compose --version
+
+# If version is too old, you may need to update the version in the yaml file
+```
+
+
+# Verification
+
+After deployment, the Apache HTTP Server should be running in a container named httpd, accessible via port 8085 on the host, and serving content from the /opt/data directory.
+
+To verify everything is working correctly:
+```
+# Check container status
+sudo docker ps | grep httpd
+
+# Access the website
+curl -I http://localhost:8085
+```
+
