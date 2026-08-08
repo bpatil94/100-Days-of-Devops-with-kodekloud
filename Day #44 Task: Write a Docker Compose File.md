@@ -5,7 +5,7 @@ a. On App Server 3 in Stratos DC create a container named httpd using a docker c
 
 b. Use httpd (preferably latest tag) image for container and make sure container is named as httpd; you can use any name for service.
 
-c. Map 80 number port of container with port 3001 of docker host.
+c. Map 80 number port of container with port 3001 of docker host.  
 
 d. Map container's /usr/local/apache2/htdocs volume with /opt/security volume of docker host which is already there. (please do not modify any data within these locations).
 
