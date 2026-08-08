@@ -56,28 +56,32 @@ sudo docker-compose up -d
 
 ## Step 5: Verify the Deployment
 ```
-### Check if the container is running
+# Check if the container is running
 sudo docker ps
+#Expected output should show the 'httpd' container running
 
+```
 <img width="1114" height="115" alt="image" src="https://github.com/user-attachments/assets/1d490467-e72b-408c-a1f7-0ad371a5ad46" />
 
-### Expected output should show the 'httpd' container running
-
-### Verify port mapping
+```
+# Verify port mapping
 sudo ss -tuln | grep 3001
+```
 - if not found ss, use bellow to install
+```
 sudo dnf install iproute
-
+```
 <img width="720" height="101" alt="image" src="https://github.com/user-attachments/assets/0eef8c75-eb59-48f9-a967-11f2eeae29aa" />
+
 <img width="575" height="62" alt="image" src="https://github.com/user-attachments/assets/1949df61-c95e-48fc-a809-4b658195266a" />
 
-### Test if the web server is serving content
 ```
+# Test if the web server is serving content
 curl http://localhost:8085
 ```
 <img width="820" height="209" alt="image" src="https://github.com/user-attachments/assets/3312d263-9d6b-4b26-b7ac-5b05e9beb53d" />
 
-### check wheather the volume is properly mounted or not ( see the files in docker host "/opt/security/" path those things should reflect in the containers mentioned path "/usr/local/apache2/htdocs")
+ - check wheather the volume is properly mounted or not ( see the files in docker host "/opt/security/" path those things should reflect in the containers mentioned path "/usr/local/apache2/htdocs")
 
 <img width="570" height="269" alt="image" src="https://github.com/user-attachments/assets/cb73ad6b-e39e-4f00-b5ef-b37c5301afd0" />
 
