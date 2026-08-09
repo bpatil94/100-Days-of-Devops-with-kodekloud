@@ -9,7 +9,7 @@ c. Map 80 number port of container with port 3001 of docker host.
 
 d. Map container's /usr/local/apache2/htdocs volume with /opt/security volume of docker host which is already there. (please do not modify any data within these locations).
 
--infrastructure details:https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/nautilus#infrastructure-details
+- infrastructure details:https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/nautilus#infrastructure-details
 
 
 
