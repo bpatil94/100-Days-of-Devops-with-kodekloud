@@ -83,7 +83,8 @@ services:
 
 **note**
 
-<img width="886" height="456" alt="image" src="https://github.com/user-attachments/assets/23f8685e-bfa2-4b85-b9aa-2bf48d0326f1" />
+ <img width="766" height="428" alt="image" src="https://github.com/user-attachments/assets/d333d21f-b6c3-43c7-96c0-1b10a7f58f36" />
+
 
 - So when the MySQL container starts, it will roughly initialize:
 ```
