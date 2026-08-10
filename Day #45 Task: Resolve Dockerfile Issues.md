@@ -46,6 +46,12 @@ docker build .
 
 <img width="868" height="323" alt="image" src="https://github.com/user-attachments/assets/57cc9f3c-507e-4ee0-a338-9ae20388d796" />
 
+**Note**
+The correct approach was to use COPY instead of RUN cp.
+
+✅ COPY transfers files from the local build context into the image.
+❌ RUN cp only works on files that already exist inside the container.
+
 
 # step 4 : again build command
 ```
