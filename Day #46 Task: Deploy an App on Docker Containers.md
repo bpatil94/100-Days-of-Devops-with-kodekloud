@@ -55,29 +55,30 @@ ssh steve@stapp02
 vi docker-compose.yml
 ```
 ```
+</html>[steve@stapp02 dba]$ cat docker-compose.yml
 version: '3.8'
-
 services:
-  web:
-    container_name: php_host
-    image: php:apache
-    ports:
-      - "8088:80"
-    volumes:
-      - /var/www/html:/var/www/html
-
-  db:
-    container_name: mysql_host
-    image: mariadb:latest
-    ports:
-      - "3306:3306"
-    volumes:
-      - /var/lib/mysql:/var/lib/mysql
-    environment:
-      MYSQL_DATABASE: database_host
-      MYSQL_USER: app_user
-      MYSQL_PASSWORD: SecurePass123!
-      MYSQL_ROOT_PASSWORD: RootSecurePass456!
+ web:
+  image: php:apache
+  container_name: php_blog
+  ports:
+   - "6400:80"
+  volumes:
+   - /var/www/html:/var/www/html
+  depends_on:
+   - db
+ db:
+  image: mariadb:latest
+  container_name: mysql_blog
+  ports:
+   - "3306:3306"
+  volumes:
+   - /var/lib/mysql:/var/lib/mysql
+  environment:
+   - MYSQL_DATABASE=database_blog
+   - MYSQL_USER=appuser
+   - MYSQL_PASSWORD=Str0ngP@ssw0rd!
+   - MYSQL_RANDOM_ROOT_PASSWORD=yes
 ```
 
 **note**
@@ -100,7 +101,8 @@ MySQL
 ```
 cat /opt/itadmin/docker-compose.yml
 ```
-<img width="496" height="385" alt="image" src="https://github.com/user-attachments/assets/1c7fb267-0992-4ee3-92df-e91676c25ee3" />
+ <img width="466" height="382" alt="image" src="https://github.com/user-attachments/assets/1a122e42-8ff3-4088-82b2-ff0966acf8f7" />
+
 
 ## step 5 : Ensure Docker and Docker Compose are installed. Verify Docker is running, and Verify Docker Compose is installed
 ```
@@ -145,7 +147,7 @@ curl http://localhost:6400/
  - Container Name: php_apache as specified.
  - Ports: Maps host port 6400 to container port 80 (6400:80).
  - Volumes: Maps host directory /var/www/html to container directory /var/www/html for persistent web content.
-  
+ - Depends On: Ensures the db service is started before the web service.
 
 - DB Service:
 
