@@ -160,7 +160,7 @@ curl http://localhost:6400/
   - MYSQL_DATABASE=database_apache: Creates a database named database_apache.
   - MYSQL_USER=appuser: Creates a custom user (not root) for DB connections.
   - MYSQL_PASSWORD=Str0ngP@ssw0rd!: Sets a complex password for the appuser.
-  - MYSQL_ROOT_PASSWORD=set root password to secure the root account.
+  - MYSQL_RANDOM_ROOT_PASSWORD=yes Docker will automatically generate a random password for the MySQL root user when the container is created.
 
 
 
