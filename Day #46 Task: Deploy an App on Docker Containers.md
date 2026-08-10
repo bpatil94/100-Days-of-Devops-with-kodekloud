@@ -79,7 +79,7 @@ services:
       MYSQL_PASSWORD: SecurePass123!
       MYSQL_ROOT_PASSWORD: RootSecurePass456!
 ```
-*note*
+**note**
 <img width="886" height="456" alt="image" src="https://github.com/user-attachments/assets/23f8685e-bfa2-4b85-b9aa-2bf48d0326f1" />
 
 - So when the MySQL container starts, it will roughly initialize:
