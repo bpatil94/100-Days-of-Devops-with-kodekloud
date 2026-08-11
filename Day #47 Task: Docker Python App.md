@@ -63,6 +63,8 @@ Insert the contents
   # Run the server.py script when the container starts
   CMD ["python", "server.py"]
 ```
+<img width="460" height="339" alt="image" src="https://github.com/user-attachments/assets/eea8c37e-401a-4f90-ab60-95f77c23ce8c" />
+
 
 ## step 3 : Build the Docker Image
 ```
