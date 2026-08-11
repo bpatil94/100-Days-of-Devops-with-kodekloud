@@ -63,6 +63,28 @@ Insert the contents
 ```
 <img width="460" height="339" alt="image" src="https://github.com/user-attachments/assets/eea8c37e-401a-4f90-ab60-95f77c23ce8c" />
 
+```
+Docker build
+     |
+     v
+FROM python:3.11-slim
+     |
+     v
+Create /app
+     |
+     v
+Copy requirements.txt
+     |
+     v
+Install Python dependencies
+     |
+     v
+Copy application source code
+     |
+     v
+Create Docker image
+
+```
 
 ## step 3 : Build the Docker Image
 ```
@@ -76,6 +98,21 @@ docker run -d --name pythonapp_nautilus -p 8094:6100 nautilus/python-app
 ```
 <img width="1090" height="84" alt="image" src="https://github.com/user-attachments/assets/39673915-11fb-4ec9-8ee4-10deac4fd189" />
 
+```
+Container starts
+      |
+      v
+python server.py
+      |
+      v
+Application listens on :6100
+      |
+      v
+-p 6300:6300
+      |
+      v
+Application accessible from host on port 6100
+```
 ## step 5 : Test the Application from stapp03 as well as from jumphost
 - from stapp03
 ```
