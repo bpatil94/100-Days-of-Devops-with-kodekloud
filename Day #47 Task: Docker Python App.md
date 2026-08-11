@@ -63,6 +63,7 @@ Insert the contents
 ```
 <img width="460" height="339" alt="image" src="https://github.com/user-attachments/assets/eea8c37e-401a-4f90-ab60-95f77c23ce8c" />
 
+- The flow of process
 ```
 Docker build
      |
@@ -98,6 +99,7 @@ docker run -d --name pythonapp_nautilus -p 8094:6100 nautilus/python-app
 ```
 <img width="1090" height="84" alt="image" src="https://github.com/user-attachments/assets/39673915-11fb-4ec9-8ee4-10deac4fd189" />
 
+- The flow of process
 ```
 Container starts
       |
