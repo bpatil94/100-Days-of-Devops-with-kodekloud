@@ -10,7 +10,7 @@ We are working on an application that will be deployed on multiple containers wi
 4. Volume name should be volume-share of type emptyDir.
 
 5. After creating the pod, exec into the first container i.e volume-container-devops-1, and just for testing create a file media.txt with the content Welcome to xFusionCorp Industries under the mounted path of first container i.e /tmp/official.
-6. 
+ 
 7. The file media.txt should be present under the mounted path /tmp/apps on the second container volume-container-devops-2 as well, since they are using a shared volume.
 
 Note: The kubectl utility on the jump-host has been configured to work with the Kubernetes cluster.
