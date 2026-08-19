@@ -47,15 +47,32 @@ spec:
     volumeMounts:
     - name: shared-logs
       mountPath: /var/log/nginx
+  initContainers:
   - name: sidecar-container
     image: ubuntu:latest
+    # Setting restartPolicy: Always makes this a sidecar container.
+    restartPolicy: Always
     command: ["sh","-c","while true; do cat /var/log/nginx/access.log /var/log/nginx/error.log; sleep 30; done"]
     volumeMounts:
     - name: shared-logs
       mountPath: /var/log/nginx
 ```
 
-<img width="815" height="512" alt="image" src="https://github.com/user-attachments/assets/a6d89e67-c8d7-44c1-a1c0-1d037ad09852" /> 
+<img width="901" height="507" alt="image" src="https://github.com/user-attachments/assets/913a5566-9ecb-4ae1-98de-3481e9a4c7f4" />
+
+- note
+  What are initContainers in Kubernetes?
+
+  An init container is a special container that runs before the main application container(s) in a Pod.
+  The main purpose is to perform initialization tasks that must complete successfully before the application starts.
+
+  | Init Container             | Sidecar Container                   |
+| -------------------------- | ----------------------------------- |
+| Runs before main container | Runs alongside main container       |
+| Must complete              | Usually keeps running               |
+| Used for initialization    | Used for supporting the application |
+| Example: DB check          | Example: log collector/proxy        |
+
 
 <img width="263" height="38" alt="image" src="https://github.com/user-attachments/assets/b1d76499-0e5a-4e53-9001-63c94edcaf76" />
 
