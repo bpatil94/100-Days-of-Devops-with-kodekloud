@@ -64,6 +64,7 @@ spec:
 
 
 # Step 3: Apply Deployment and Service
+
 ```
 kubectl apply -f grafana-deployment.yaml
 ```
@@ -76,11 +77,13 @@ kubectl apply -f grafana-service.yaml
 ```
 kubectl get deployments
 ```
+```
 kubectl get pods
 ```
 ```
 kubectl get svc
 ```
+
 <img width="731" height="259" alt="image" src="https://github.com/user-attachments/assets/4bcb1d10-6e4a-4911-bdef-419a12db4bf5" />
 
 
