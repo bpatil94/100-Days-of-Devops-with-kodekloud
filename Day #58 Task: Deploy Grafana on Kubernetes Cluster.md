@@ -1,4 +1,4 @@
-# Day 58: Deploy Grafana on Kubernetes Cluster
+# Day #58 task: Deploy Grafana on Kubernetes Cluster
 The Nautilus DevOps teams is planning to set up a Grafana tool to collect and analyze analytics from some applications. They are planning to deploy it on Kubernetes cluster. Below you can find more details.
 
 1.) Create a deployment named grafana-deployment-devops using any grafana image for Grafana app. Set other parameters as per your choice.
