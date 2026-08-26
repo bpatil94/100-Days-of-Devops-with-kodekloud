@@ -1,4 +1,4 @@
-# Day 57: Print Environment Variables
+# Day #57 task: Print Environment Variables
 The Nautilus DevOps team is working on to setup some pre-requisites for an application that will send the greetings to different users. There is a sample deployment, that needs to be tested. Below is a scenario which needs to be configured on Kubernetes cluster. Please find below more details about it.
 
 1. Create a pod named print-envars-greeting.
