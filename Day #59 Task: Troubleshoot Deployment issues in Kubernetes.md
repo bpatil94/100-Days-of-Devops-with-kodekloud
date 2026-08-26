@@ -28,7 +28,8 @@ kubectl get configmap
   <img width="951" height="357" alt="image" src="https://github.com/user-attachments/assets/3d36cb2d-702e-4da8-9539-8279cba91e0a" />
 
 - observe the below things
-  <img width="617" height="356" alt="image" src="https://github.com/user-attachments/assets/af1e86df-366d-41bc-aef3-9a377db39cbf" />
+
+<img width="617" height="356" alt="image" src="https://github.com/user-attachments/assets/af1e86df-366d-41bc-aef3-9a377db39cbf" />
 
 
 - Describe the ConfigMap & pods:
