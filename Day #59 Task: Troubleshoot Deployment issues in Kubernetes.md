@@ -27,7 +27,7 @@ kubectl get configmap
   <img width="889" height="482" alt="image" src="https://github.com/user-attachments/assets/e3b5ac17-16eb-4bdd-bb58-7e3e5f4a9644" />
   <img width="951" height="357" alt="image" src="https://github.com/user-attachments/assets/3d36cb2d-702e-4da8-9539-8279cba91e0a" />
 
-- observe the below things
+- observe the below things ( there are two typo)
 
 <img width="617" height="356" alt="image" src="https://github.com/user-attachments/assets/af1e86df-366d-41bc-aef3-9a377db39cbf" />
 
