@@ -37,9 +37,7 @@ kubectl describe secret beta
 ```
 <img width="578" height="292" alt="image" src="https://github.com/user-attachments/assets/b542a9e2-9696-4761-8f0e-6d10171beed1" />
 
-<img width="398" height="269" alt="image" src="https://github.com/user-attachments/assets/4b7ea57e-993e-4a1e-b49c-08e4be5677ef" />
-
-
+ 
 ## Step-2: Create a manifest file, using the given specs and create a pod using it.
 
 Let’s first jot down the specs given in the problem statement.
