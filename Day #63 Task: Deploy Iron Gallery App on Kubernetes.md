@@ -162,9 +162,12 @@ spec:
 ```
 <img width="636" height="496" alt="image" src="https://github.com/user-attachments/assets/7b7551bc-51f7-44ab-8543-e46dfce4fd09" />
 
+
 <img width="631" height="513" alt="image" src="https://github.com/user-attachments/assets/e2298814-c596-40af-b151-3c328aed00ab" />
 
+
 <img width="527" height="498" alt="image" src="https://github.com/user-attachments/assets/202920ea-7f99-4a0b-9221-c405fc6deb92" />
+
 
 <img width="390" height="446" alt="image" src="https://github.com/user-attachments/assets/05f348be-1a4c-43d0-b9a9-40174f57c341" />
 
@@ -192,3 +195,36 @@ k get pods -n iron-namespace-xfusion
 ```
 curl http://localhost:32678
 ```
+**Note**
+1. how to get node ip of the container running in some namespace
+   --> kubectl get pod <pod-name> -n <namespace> -o wide
+   --> kubectl get node <nodename> -o wide
+   --> For your NodePort, you'd typically use the EXTERNAL-IP:
+       http://external-ip:32678
+
+
+2.
+   ```
+   ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 32678
+   ```
+* protocol: TCP — The Service uses TCP.
+* port: 80 — The Service listens on port 80 inside the cluster.
+* targetPort: 80 — Traffic is forwarded to port 80 on the selected Pods.
+* nodePort: 32678 — Kubernetes exposes the Service on port 32678 on every cluster
+
+  ```
+    Browser
+   ↓
+  http://<NODE-IP>:32678
+   ↓
+  NodePort 32678
+   ↓
+  Service port 80
+   ↓
+  Pod port 80
+ ```
+   
