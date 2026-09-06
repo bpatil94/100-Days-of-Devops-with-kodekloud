@@ -250,7 +250,7 @@ kubectl exec -it mysql-deployment-86bd6fcfdc-t7bvn -- mysql -u root -p
 - 
 <img width="853" height="256" alt="image" src="https://github.com/user-attachments/assets/967f6056-6b92-4123-995b-1180503935e8" />
 
-### # # Test MySQL Login as a kodekloud_tim user and enter the password given in the problem statement and see if you can successfully login as the kodekloud_tim user.
+### # Test MySQL Login as a kodekloud_tim user and enter the password given in the problem statement and see if you can successfully login as the kodekloud_tim user.
 ```
 kubectl exec -it mysql-deployment-86bd6fcfdc-t7bvn -- mysql -u kodekloud_cap -p
 ```
