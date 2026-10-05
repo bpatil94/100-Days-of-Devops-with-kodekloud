@@ -75,6 +75,12 @@ Now that passwordless connection is setup, let’s run the build.
 - Before running the job, check if package exists:
   <img width="651" height="152" alt="image" src="https://github.com/user-attachments/assets/ce798348-7187-4ec5-98fe-b64d47b1a0e9" />
 
+- If installed
+
+  You may see:
+
+  vim-enhanced.x86_64    2:9.1.1234-1.el9    @System
+
   Enter the package that needs to be installed (as given in the problem statement: vim-enahanced).
 
   <img width="1189" height="509" alt="image" src="https://github.com/user-attachments/assets/8799f591-5c3e-4fb9-ba14-f7d4efebc524" />
@@ -87,5 +93,9 @@ Now that passwordless connection is setup, let’s run the build.
 
 <img width="1226" height="513" alt="image" src="https://github.com/user-attachments/assets/117af612-0e5e-4505-948d-d77dd5b1027a" />
 
+
+### Verify if package got installed successfully after the Jenkins run.
+
+<img width="498" height="62" alt="image" src="https://github.com/user-attachments/assets/d959718e-6870-42c4-ad3d-1af4ca34ad78" />
 
 
