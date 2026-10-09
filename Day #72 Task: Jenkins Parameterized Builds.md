@@ -115,7 +115,8 @@ Deploy to different environments
 Build different branches or versions
 Customize build behavior based on input
 
-***Types of Parameters**
+***Types of Parameters***
+
 <img width="808" height="348" alt="image" src="https://github.com/user-attachments/assets/10a8e9d3-acc1-4a93-8448-c556432f9297" />
 
 ***Best Practices***
