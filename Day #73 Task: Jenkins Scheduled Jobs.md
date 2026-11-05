@@ -3,9 +3,9 @@
 The devops team of xFusionCorp Industries is working on to setup centralised logging management system to maintain and analyse server logs easily. Since it will take some time to implement, they wanted to gather some server logs on a regular basis. At least one of the app servers is having issues with the Apache server. The team needs Apache logs so that they can identify and troubleshoot the issues easily if they arise. So they decided to create a Jenkins job to collect logs from the server. Please create/configure a Jenkins job as per details mentioned below:
 Click on the Jenkins button on the top bar to access the Jenkins UI. Login using username admin and password Adm!n321
 
-1. Create a Jenkins jobs named copy-logs.
+1. Create a Jenkins jobs named ***copy-logs***.
 
-2. Configure it to periodically build every 5 minutes to copy the Apache logs (both access_log and error_log) from App Server 2 (stapp02) from the default logs location to location /usr/src/finance on the Storage Server.
+2. Configure it to periodically build every 5 minutes to copy the Apache logs (both access_log and error_log) from ***App Server 2 (stapp02)*** from the default logs location to location ***/usr/src/finance*** on the Storage Server.
 
 3. Build the job at least once so that the logs are copied and can be verified.
 
