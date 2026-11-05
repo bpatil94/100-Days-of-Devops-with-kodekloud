@@ -37,14 +37,14 @@ Click on the Jenkins button on the top bar to access the Jenkins UI. Login using
    <img width="868" height="359" alt="image" src="https://github.com/user-attachments/assets/f692869f-88da-4692-8f9a-3affabb73753" />
 
 
-- Jenkins --> manage jenkins
+- Jenkins --> manage jenkins\
    configure ***credentials*** under ***security*** ( add app-server user name and password, under system, global,  so that jenkin can access that server)
 
    <img width="1124" height="599" alt="image" src="https://github.com/user-attachments/assets/0bc26f51-02d3-4f73-9e3a-ae96f54bb969" />
 
  
-- Jenkins --> manage jenkins
-   configure ***system*** under ***System Configuration*** , in that add SSH remote hosts (give credentials of server so that jenkin can access that (hostname, port and under credential you will get server details, which was configured in previou step))
+- Jenkins --> manage jenkins\
+   configure ***system*** under ***System Configuration*** , in that add SSH remote hosts (give credentials of server so that jenkin can access that (hostname, port and under credential you will get     server details, which was configured in previou step))
 
   <img width="1212" height="480" alt="image" src="https://github.com/user-attachments/assets/1f53952a-10c7-401b-9b41-d1eae21ff4de" />
 
