@@ -106,7 +106,7 @@ configure the job with Triggers(Build periodically) and Build Steps with Execute
       <img width="1068" height="445" alt="image" src="https://github.com/user-attachments/assets/b8ce6eed-cc2f-4fca-95d9-d70bc82ef5a0" />
 
    
-   - verify the logs in storage server
+   - verify the logs in storage server\
      <img width="645" height="511" alt="image" src="https://github.com/user-attachments/assets/40a49ad0-2008-4985-841b-ca834f799ba0" />
 
   
@@ -123,7 +123,7 @@ configure the job with Triggers(Build periodically) and Build Steps with Execute
      ```
     <img width="1181" height="543" alt="image" src="https://github.com/user-attachments/assets/bc7f0f22-0ef6-467d-84df-8e05b504cbbd" />
 
- - verify the logs in storage server
+ - verify the logs in storage server\
    <img width="539" height="221" alt="image" src="https://github.com/user-attachments/assets/12fa9bd3-a05c-40d4-9036-4852f6241c2d" />
 
 
