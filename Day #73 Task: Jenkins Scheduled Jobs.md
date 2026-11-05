@@ -31,7 +31,7 @@ Click on the Jenkins button on the top bar to access the Jenkins UI. Login using
 
 
 ## step2: Setup configuration in jenkins , so that jenkin communicates with app-server
-- Jenkins --> manage jenkins
+- Jenkins --> manage jenkins\
    install the ssh relevent plugins (Publish Over SSH, SSH Credentials Plugin, SSH Pipeline Steps, SSH plugin) , then restart jenkings
 
    <img width="868" height="359" alt="image" src="https://github.com/user-attachments/assets/f692869f-88da-4692-8f9a-3affabb73753" />
