@@ -96,7 +96,7 @@ configure the job with Triggers(Build periodically) and Build Steps with Execute
 
 - I tried with two types both are successfull
   
-  1.\
+  1.USING SINGLE COMMAND
     ```
     scp /var/log/httpd/access_log /var/log/httpd/error_log natasha@ststor01:/usr/src/sysops
     ```
@@ -111,7 +111,7 @@ configure the job with Triggers(Build periodically) and Build Steps with Execute
 
   
 
-  2.\
+  2. USING VARIABLES
      ```
      LOG_DIR="/var/log/httpd" # Confirmed Apache log path on CentOS
      DEST_USER="natasha"
