@@ -104,9 +104,11 @@ configure the job with Triggers(Build periodically) and Build Steps with Execute
       <img width="1068" height="445" alt="image" src="https://github.com/user-attachments/assets/b8ce6eed-cc2f-4fca-95d9-d70bc82ef5a0" />
 
    - verify the logs in storage server
+   - 
      <img width="645" height="511" alt="image" src="https://github.com/user-attachments/assets/40a49ad0-2008-4985-841b-ca834f799ba0" />
 
   
+
   2.
      LOG_DIR="/var/log/httpd" # Confirmed Apache log path on CentOS
      DEST_USER="natasha"
