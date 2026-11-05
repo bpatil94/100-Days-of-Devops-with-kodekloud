@@ -111,7 +111,7 @@ configure the job with Triggers(Build periodically) and Build Steps with Execute
 
   
 
-  2. USING VARIABLES
+  2.USING VARIABLES
      ```
      LOG_DIR="/var/log/httpd" # Confirmed Apache log path on CentOS
      DEST_USER="natasha"
